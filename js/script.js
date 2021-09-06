@@ -18,7 +18,7 @@ var attesa = 0 ;
 var intervallo = setInterval(
     function(){
         attesa++;
-        if(attesa == 2){
+        if(attesa == 30){
             clearInterval(intervallo);
 
             for (var i = 0; i < 5; i++) {
@@ -29,10 +29,10 @@ var intervallo = setInterval(
                         numeriUguali.push(numeriUtente[i]);   
                     }
                 }
-                if(numeriUguali.length != 0){
+            if(numeriUguali.length != 0){
                     alert("hai indovinato i numeri: " + numeriUguali)
                 }
-                else{
+            else{
                     alert("Non hai indvinato nemmeno un numero, Capra! Ricarica la pagina e riprova!")
                 }
         }
